@@ -13,9 +13,9 @@ func main() {
 		os.Exit(2)
 	}
 	directorios := os.Args
-	// Valdiamos los directorios
-	for _, dir := range directorios{
-		if _, err := os.Stat(dir); os.IsNotExist(err){
+	// Validamos los directorios
+	for _, dir := range directorios {
+		if _, err := os.Stat(dir); os.IsNotExist(err) {
 			println("El directorio " + dir + " no existe")
 		} else {
 			println("El directorio" + dir + " existe")
@@ -23,4 +23,4 @@ func main() {
 
 	}
 	//https://stackoverflow.com/questions/18973335/golang-check-number-of-arguments-also-user-input-check-for-return-key-blan
-	}
+}
